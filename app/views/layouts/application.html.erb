@@ -14,8 +14,18 @@
 	<%= stylesheet_link_tag 'default', :media => screen %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="container">
+		<header>
+			<%= image_tag("logo.png", :alt => "AttenteUrgence.ca", :class=> "round") %>
+			<nav class="round">
+				<u1>
+				<li><%= link_to "Accueil", '#' %></li>
+				<li><%= link_to "A propos", '#' %></li>
+				</u1>
+			</nav>
+		</header>				
+		<section class="round">
+		<%= yield %>	
+	</div>
 </body>
 </html>
