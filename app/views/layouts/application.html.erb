@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attente dans les urgences</title>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+	<!--[if lt IE9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<%= stylesheet_link_tag 'blueprint/screen', :media => screen %>
+	<!--[if lt IE8]>
+	<%= stylesheet_link_tag 'blueprint/ie' %>
+	<![endif]-->
+	<%= stylesheet_link_tag 'default', :media => screen %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
