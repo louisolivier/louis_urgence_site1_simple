@@ -2,10 +2,10 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require 'rvm/capistrano'
 require 'bundler/capistrano'
 
-set :application, "set your application name here"
+set :application, "test"
 set :repository,  "set your repository location here"
 
-set :scm, :subversion
+set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "your web-server here"                          # Your HTTP server, Apache/etc
