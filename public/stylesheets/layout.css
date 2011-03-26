@@ -1,0 +1,66 @@
+/** WRAPPER */
+
+#wrapper {
+}
+
+/** HEADER */
+
+#header {
+}
+
+/** LOGO */
+
+#logo {
+	float: left;
+	width: 400px;
+	height: 74px;
+	background: url(/images/homepage01.jpg) no-repeat left top;
+}
+
+#logo h1, #logo p {
+	margin: 0px;
+	line-height: normal;
+	text-indent: -9999em;
+}
+
+#logo h1 a {
+	display: block;
+	height: 74px;
+}
+
+/** MENU */
+
+#menu {
+}
+
+/** PAGE */
+
+#page {
+}
+
+/** CONTENT */
+
+#content {
+	float: right;
+	width: 668px;
+	padding: 10px 35px 0px 0px;
+}
+
+.single #content {
+	float: none;
+	width: auto;
+	padding: 10px 35px;
+}
+
+/** SIDEBAR */
+
+#sidebar {
+	float: left;
+	width: 232px;
+	padding: 10px 0px 0px 35px;
+}
+
+/** FOOTER */
+
+#footer {
+}

@@ -1,7 +1,14 @@
 Apptest::Application.routes.draw do
+  
+  resources :information
+
+  get "users/new"
+
   get "pages/home"
 
   get "pages/contact"
+  
+  get "pages/login"
 
 
   # The priority is based upon order of creation:
@@ -53,7 +60,7 @@ Apptest::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "pages#home"
 
   # See how all your routes lay out with "rake routes"
 
