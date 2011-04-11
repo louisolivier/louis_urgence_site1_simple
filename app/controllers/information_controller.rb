@@ -1,4 +1,5 @@
 class InformationController < ApplicationController
+  
   # GET /information
   # GET /information.xml
   def index

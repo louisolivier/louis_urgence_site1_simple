@@ -1,14 +1,14 @@
 <div id="content">
-	<div id="box2" class="box-style1">
+		<div id="box2" class="box-style1">
 				<h2 class="title"><span>Consulter</span> l'attente par région </h2>
 				<div class="content"> <img src="/images/homepage06.jpg" alt="" width="196" height="160" class="border alignleft" />
 					<p>Consulter l'attente dans les différents centres hospitaliers</p>
 					<p><a href="" class="more">Île de Montréal</a></p>
 					<p><a href="" class="more">Rive-Sud de Montréal</a></p>
 					<p><a href="" class="more">Rive-Nord de Montréal</a></p></td>
-	</div>
-</div>
-<div id="box3" class="box-style1">
+				</div>
+		</div>
+		<div id="box3" class="box-style1">
 				<h2 class="title"><span>Représentation</span> de l'attente</h2>
 				<div class="content"><img src="/images/lightsv02.png" alt="" width="120" height="190" class="border alignleft" />
 					<p> </p>
@@ -16,32 +16,29 @@
 					<p><strong>Jaune :</strong> Entre 2 et 10 hres </p>
 					<p><strong>Vert :</strong> Moins de 2 hres </p>
 				</div>
-			</div>
-			<div id="box4" class="box-style1">
-				<h2 class="title"><span>Liens</span> </h2>
+		</div>
+		<div id="box4" class="box-style1">
+				<h2 class="title"><span>À ne pas manquer!</span> Derrière les rideaux </h2>
 				<div class="content">
 					<ul class="ul-style1">
-						<li><span> <%= @date %></span> <a href="#">Ut tellus augue sollicitudin pulvinar</a></li>
-						<li class="alt"><span>05.24.09</span> <a href="#">Auctor laoreet blandit ipsum curabitur</a></li>
-						<li><span>05.24.09</span> <a href="#">Ante suscipit porttitor auctor</a></li>
-						<li class="alt"><span>05.21.09</span> <a href="#">Blandit non nibh aliquam sit amet libero</a></li>
-						<li><span>05.20.09</span> <a href="#">Etiam mauris sed nisi volutpat</a></li>
-						<li class="alt"><span>05.18.09</span> <a href="#">Ultricies tellus auctor quisque sit amet</a></li>
+						<li><span>4 Avril 2011</span> <a href="#">Ut tellus augue sollicitudin pulvinar</a></li>
+						<li class="alt"><span>Mars 2011</span> <a href="#">Nos motivations</a></li
 					</ul>
-					<p><a href="#" class="more">More&hellip;</a></p>
 				</div>
-			</div>
 		</div>
-		<div id="sidebar">
-			<div id="box5" class="box-style1">
+</div>
+<div id="sidebar">
+		<div id="box5" class="box-style1">
 				<h2 class="title"><span>Chercher</span> par Centre Hospitalier</h2>
 				<div class="content">
 					<p>Sélectionner parmi la liste suivante</p>
-						<%= collection_select(:information, :name, Information.find(:all), :id, :name, options ={:prompt => "-Sélectionner ici "}) %>
+						<%= collection_select(:information, :name, Information.find(:all), :id, :name, options ={:prompt => "-Sélectionner ici "},
+						{:onchange => "alert('hello')"}) %>
+				
 				</div>
-			</div>
-			<div id="box6" class="box-style1">
-				<h2 class="title"><span>Aidez-Nous</span> - version Beta</h2>
+		</div>
+		<div id="box6" class="box-style1">
+			<h2 class="title"><span>Aidez-Nous</span> - version Beta</h2>
 				<div class="content">
 
 					<p><img src="/images/homepage15.jpg" alt="" width="206" height="60" class="border" /></p>
@@ -51,5 +48,5 @@
 					<p><strong>Courriel:</strong> attenteurgence@gmail.com</p></td>
 					<p>Ce site est présentement en version Beta.</p>
 				</div>
-			</div>
+		</div>
 </div>

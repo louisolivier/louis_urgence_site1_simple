@@ -1,20 +1,21 @@
-<p id="notice"><%= notice %></p>
+<body class="single">
+		<div id="content">
+			<div id="box9" class="box-style1">
+				<h2 class="title"><span>Établissement hospitalier de</span> <%= @region %></h2>
+				<div class="content"><img src="/images/subpage1_01.jpg" alt="" width="156" height="120" class="border alignleft" />
+		  				<b>Nom:</b>
+		  				<%= @information.name %>
+						</p>
+						<p>
+		  				<b>Ville:</b>
+		  				<%= @information.city %>
+						</p>
+						<p>
+		  				<b>Région:</b>
+		  				<%= @information.region %>
+						</p>
+						<%= link_to 'Retourner à la page précédente', information_index_path %>
+				</div>
+			</div>		
+		</div>
 
-<p>
-  <b>Name:</b>
-  <%= @information.name %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%= @information.city %>
-</p>
-
-<p>
-  <b>Region:</b>
-  <%= @information.region %>
-</p>
-
-
-<%= link_to 'Edit', edit_information_path(@information) %> |
-<%= link_to 'Back', information_index_path %>
