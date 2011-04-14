@@ -9,7 +9,7 @@ set :scm_username, "louisolivier"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :deploy_to, "/var/www/sites/urgenceattente.ca"
+set :deploy_to, "/var/www/sites/"
 
 role :web, "173.255.233.171"                          # Your HTTP server, Apache/etc
 role :app, "173.255.233.171"                          # This may be the same as your `Web` server
