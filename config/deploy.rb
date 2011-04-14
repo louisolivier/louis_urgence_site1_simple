@@ -1,4 +1,4 @@
-$:.unshift(File.expand_path('./lib', ENV['/Users/louisolivierbureau/.rvm']))
+$:.unshift(File.expand_path('./lib', ENV['/home/louisolivierbureau/.rvm']))
 require "rvm/capistrano"
 require "bundler/capistrano"
 
