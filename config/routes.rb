@@ -2,9 +2,9 @@ Apptest::Application.routes.draw do
   
   resources :information
 
-  match "/contact", :to => "pages#contact"
+  match '/contact', :to => 'pages#contact'
   
-  match "/login", :to => "pages#login"
+  match 'login', :to => 'pages#login'
 
 
   # The priority is based upon order of creation:
