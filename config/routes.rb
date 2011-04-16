@@ -2,13 +2,9 @@ Apptest::Application.routes.draw do
   
   resources :information
 
-  get "users/new"
-
-  get "pages/home"
-
-  get "pages/contact"
+  match "/contact", to => "pages#contact"
   
-  get "pages/login"
+  match "/login", to => "pages#login"
 
 
   # The priority is based upon order of creation:
